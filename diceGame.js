@@ -5,8 +5,10 @@ let newGameButton = document.getElementById("newGameButton");
 // Player One variables
 
 let rollButtonOne = document.getElementById("rollButtonOne");
+rollButtonOne.disabled = true;
 
 let holdButtonOne = document.getElementById("holdButtonOne");
+holdButtonOne.disabled = true;
 
 let numberRolledOne = document.getElementById("numberRolledOne");
 
@@ -19,15 +21,16 @@ let playerOneScore = 0;
 let rollButtonTwo = document.getElementById("rollButtonTwo");
 
 let holdButtonTwo = document.getElementById("holdButtonTwo");
+holdButtonTwo.disabled = true;
 
 let numberRolledTwo = document.getElementById("numberRolledTwo");
+rollButtonTwo.disabled = true;
 
 let scoreTwo = document.getElementById("scoreTwo");
 
 let playerTwoScore = 0;
 
 
-newGame();
 
 //Player One Game
 
