@@ -57,6 +57,11 @@ h1 {
     font-size: 1.5rem;
 }
 
+.buttonWrapperOne {
+display: flex;
+flex-direction: row;
+}
+
 #rollButtonOne {
     margin-bottom: 1rem;
     color: black;
@@ -64,7 +69,26 @@ h1 {
     width: 5rem;
 }
 
+#holdButtonOne {
+    margin-bottom: 1rem;
+    color: black;
+    background-color: green;
+    width: 5rem;
+}
+
+.buttonWrapperTwo {
+    display: flex;
+    flex-direction: row;
+    }
+
 #rollButtonTwo {
+    margin-bottom: 1rem;
+    color: black;
+    background-color: green;
+    width: 5rem;
+}
+
+#holdButtonTwo {
     margin-bottom: 1rem;
     color: black;
     background-color: green;
