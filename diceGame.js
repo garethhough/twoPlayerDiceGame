@@ -1,3 +1,7 @@
+// Variables
+
+let newGameButton = document.getElementById("newGameButton");
+
 // Player One variables
 
 let rollButtonOne = document.getElementById("rollButtonOne");
@@ -72,6 +76,7 @@ function scoreFunctionTwo(rolledNumTwo) {
     }
 }
 
+
 // Clears stats
 function newGame() {
     scoreOne.innerHTML = null;
@@ -81,3 +86,7 @@ function newGame() {
     numberRolledTwo.innerHTML = null;
     playerTwoScore = 0;
 }
+
+newGameButton.addEventListener("click", function (){
+    newGame();
+});
