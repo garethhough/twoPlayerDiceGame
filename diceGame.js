@@ -91,10 +91,10 @@ function newGame() {
     scoreTwo.innerHTML = null;
     numberRolledTwo.innerHTML = null;
     playerTwoScore = 0;
-    rollButtonOne.removeAttribute("disabled");
-    holdButtonOne.removeAttribute("disabled");
-    rollButtonTwo.setAttribute("disabled", "disabled");
-    holdButtonTwo.setAttribute("disabled", "disabled");
+    rollButtonOne.disabled = false;
+    holdButtonOne.disabled = false;
+    rollButtonTwo.disabled = true;
+    holdButtonTwo.disabled = true;
 }
 
 function reset(player) {
@@ -104,16 +104,17 @@ function reset(player) {
     scoreTwo.innerHTML = null;
     numberRolledTwo.innerHTML = null;
     playerTwoScore = 0;
+
     if (player === "playerOne") {
-        rollButtonTwo.removeAttribute("disabled");
-        holdButtonTwo.removeAttribute("disabled");
-        rollButtonOne.setAttribute("disabled", "disabled");
-        holdButtonOne.setAttribute("disabled", "disabled");
+        rollButtonTwo.disabled = false;
+        holdButtonTwo.disabled = false;
+        rollButtonOne.disabled = true;
+        holdButtonOne.disabled = true;
     } else if (player === "playerTwo") {
-        rollButtonOne.removeAttribute("disabled");
-        holdButtonOne.removeAttribute("disabled");
-        rollButtonTwo.setAttribute("disabled", "disabled");
-        holdButtonTwo.setAttribute("disabled", "disabled");
+        rollButtonOne.disabled = false;
+        holdButtonOne.disabled = false;
+        rollButtonTrue.disabled = true;
+        holdButtonTrue.disabled = true;
     } else {
         console.log("play on")
     }
@@ -124,15 +125,15 @@ newGameButton.addEventListener("click", function () {
 });
 
 holdButtonOne.addEventListener("click", function () {
-    rollButtonOne.setAttribute("disabled", "disabled");
-    holdButtonOne.setAttribute("disabled", "disabled");
-    holdButtonTwo.removeAttribute("disabled");
-    rollButtonTwo.removeAttribute("disabled");
+    rollButtonOne.disabled = true;
+    holdButtonOne.disabled = true;
+    rollButtonTwo.disabled = false;
+    holdButtonTwo.disabled = false;
 });
 
 holdButtonTwo.addEventListener("click", function () {
-    rollButtonTwo.setAttribute("disabled", "disabled");
-    holdButtonTwo.setAttribute("disabled", "disabled");
-    holdButtonOne.removeAttribute("disabled");
-    rollButtonOne.removeAttribute("disabled");
+    rollButtonTwo.disabled = true;
+    holdButtonTwo.disabled = true;
+    rollButtonOne.disabled = false;
+    holdButtonOne.disabled = false;
 });
