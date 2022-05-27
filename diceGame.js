@@ -26,6 +26,9 @@ let scoreTwo = document.getElementById("scoreTwo");
 
 let playerTwoScore = 0;
 
+
+newGame();
+
 //Player One Game
 
 // Click roll button and recieve a number between 1 and 6
