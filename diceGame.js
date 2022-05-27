@@ -113,8 +113,8 @@ function reset(player) {
     } else if (player === "playerTwo") {
         rollButtonOne.disabled = false;
         holdButtonOne.disabled = false;
-        rollButtonTrue.disabled = true;
-        holdButtonTrue.disabled = true;
+        rollButtonTwo.disabled = true;
+        holdButtonTwo.disabled = true;
     } else {
         console.log("play on")
     }
