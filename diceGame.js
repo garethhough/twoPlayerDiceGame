@@ -131,15 +131,23 @@ newGameButton.addEventListener("click", function () {
 });
 
 holdButtonOne.addEventListener("click", function () {
-    rollButtonOne.disabled = true;
-    holdButtonOne.disabled = true;
-    rollButtonTwo.disabled = false;
-    holdButtonTwo.disabled = false;
+    if (playerOneScore < 21) {
+        rollButtonOne.disabled = true;
+        holdButtonOne.disabled = true;
+        rollButtonTwo.disabled = false;
+        holdButtonTwo.disabled = false;
+    } else {
+        alert("You scored more than 20, Player One Wins!");
+    }
 });
 
 holdButtonTwo.addEventListener("click", function () {
-    rollButtonTwo.disabled = true;
-    holdButtonTwo.disabled = true;
-    rollButtonOne.disabled = false;
-    holdButtonOne.disabled = false;
+    if (playerTwoScore < 21) {
+        rollButtonTwo.disabled = true;
+        holdButtonTwo.disabled = true;
+        rollButtonOne.disabled = false;
+        holdButtonOne.disabled = false;
+    } else {
+        alert("You scored more than 20, Player Two Wins!");
+    }
 });
