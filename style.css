@@ -58,8 +58,8 @@ h1 {
 }
 
 .buttonWrapperOne {
-display: flex;
-flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 #rollButtonOne {
@@ -79,7 +79,7 @@ flex-direction: row;
 .buttonWrapperTwo {
     display: flex;
     flex-direction: row;
-    }
+}
 
 #rollButtonTwo {
     margin-bottom: 1rem;
