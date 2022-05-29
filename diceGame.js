@@ -47,7 +47,7 @@ function scoreFunctionOne(rolledNumOne) {
         alert("You rolled a 1 first, scores will now be reset!");
         reset("playerOne");
     } else if (playerOneScore >= 2 && playerOneScore <= 20 && rolledNumOne == 1) {
-        alert("You rolled a 1, You lose!");
+        alert("You rolled a 1, You lose, Player Two wins!");
         newGame();
 // If score is less than 20, roll again
     } else if (playerOneScore <= 20) {
@@ -76,7 +76,7 @@ function scoreFunctionTwo(rolledNumTwo) {
         alert("You rolled a 1 first, scores will now be reset!");
         reset("playerTwo");
     } else if (playerTwoScore >= 2 && playerTwoScore <= 20 && rolledNumTwo == 1) {
-        alert("You rolled a 1, You lose!");
+        alert("You rolled a 1, You lose, Player One wins!");
         newGame();
 // If score is less than 20, roll again
     } else if (playerTwoScore <= 20) {
